@@ -1,3 +1,6 @@
 - Este é um projeto de uma API no laravel. 
-- Os elementos do banco de dados são exibidos a uma paginação de 5 itens por tela, além disso a relação entre as tableas Jornalista e Artigo é representada pela cardinalidade de 1 para N, respectivamente. 
-- Foi criada uma classe chamada app\API\ApiError para tratar os códigos de status de respostas HTTP quanto utilizado.
+- Os elementos do banco de dados são exibidos a uma paginação de 5 itens por tela, além disso a relação entre as tabelas Jornalista e Artigo é representada pela cardinalidade de 1 para N, respectivamente. 
+- As configurações do banco encontram-se no arquivo .env usando o phpMyAdmin do próprio XAMPP.
+- Foram criados Migartions e Factorys de ambas classes e em seguida foi feito o povoamento das tabelas criadas através do Database\Seeder\DatabaseSeeder.php.
+-  O CRUD foi feito utilizando os metódos de solicitação HTTP via a ferramenta Postman .
+- Foi criada uma classe chamada app\API\ApiError.php para tratar os códigos de status de respostas HTTP quando utilizado.
