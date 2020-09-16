@@ -2,5 +2,7 @@
 - Os elementos do banco de dados são exibidos a uma paginação de 5 itens por tela, além disso a relação entre as tabelas Jornalista e Artigo é representada pela cardinalidade de 1 para N, respectivamente. 
 - As configurações do banco encontram-se no arquivo .env usando o phpMyAdmin do próprio XAMPP.
 - Foram criados Migartions e Factorys de ambas classes e em seguida foi feito o povoamento das tabelas criadas através do Database\Seeder\DatabaseSeeder.php.
--  O CRUD foi feito utilizando os metódos de solicitação HTTP via a ferramenta Postman .
-- Foi criada uma classe chamada app\API\ApiError.php para tratar os códigos de status de respostas HTTP quando utilizado.
+-  O CRUD foi feito utilizando os metódos de solicitação HTTP via a ferramenta Postman.
+- Quando utilizar a listagem de artigos pelo status o valor 1 corresponde aos que já foram publicados e 0 aos artigos que ainda não foram publicados.
+- Para deletar ou atualizar tanto um jornalista quanto um artigo é necessário informar o id do mesmo.
+- A classe chamada app\API\ApiError.php foi criada para tratar os códigos de status de respostas HTTP quando utilizado.
